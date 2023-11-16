@@ -1,4 +1,4 @@
-package com.nwboxed.simplespring.model;
+package com.example.simplespring.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

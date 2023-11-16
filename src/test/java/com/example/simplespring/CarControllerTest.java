@@ -1,7 +1,7 @@
-package com.nwboxed.simplespring;
+package com.example.simplespring;
 
-import com.nwboxed.simplespring.model.Car;
-import com.nwboxed.simplespring.service.CarService;
+import com.example.simplespring.model.Car;
+import com.example.simplespring.service.CarService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

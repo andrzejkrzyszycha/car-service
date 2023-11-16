@@ -1,4 +1,4 @@
-package com.nwboxed.simplespring;
+package com.example.simplespring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

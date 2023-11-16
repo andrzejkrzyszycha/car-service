@@ -1,8 +1,8 @@
-package com.nwboxed.simplespring.mapper;
+package com.example.simplespring.mapper;
 
-import com.nwboxed.simplespring.dto.CarDto;
-import com.nwboxed.simplespring.dto.CarResponseDto;
-import com.nwboxed.simplespring.model.Car;
+import com.example.simplespring.dto.CarDto;
+import com.example.simplespring.dto.CarResponseDto;
+import com.example.simplespring.model.Car;
 
 import java.util.List;
 

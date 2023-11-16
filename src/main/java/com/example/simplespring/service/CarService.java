@@ -1,7 +1,7 @@
-package com.nwboxed.simplespring.service;
+package com.example.simplespring.service;
 
-import com.nwboxed.simplespring.model.Car;
-import com.nwboxed.simplespring.repository.CarRepository;
+import com.example.simplespring.model.Car;
+import com.example.simplespring.repository.CarRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
-package com.nwboxed.simplespring.dto;
+package com.example.simplespring.dto;
 
-import com.nwboxed.simplespring.model.Car;
+import com.example.simplespring.model.Car;
 import lombok.Builder;
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package com.nwboxed.simplespring.dto;
+package com.example.simplespring.dto;
 
 import lombok.Builder;
 import lombok.Data;

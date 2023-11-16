@@ -1,18 +1,16 @@
-package com.nwboxed.simplespring.controller;
+package com.example.simplespring.controller;
 
-import com.nwboxed.simplespring.dto.CarDto;
-import com.nwboxed.simplespring.dto.CarResponseDto;
-import com.nwboxed.simplespring.mapper.CarMapper;
-import com.nwboxed.simplespring.model.Car;
-import com.nwboxed.simplespring.service.CarService;
+import com.example.simplespring.dto.CarDto;
+import com.example.simplespring.dto.CarResponseDto;
+import com.example.simplespring.mapper.CarMapper;
+import com.example.simplespring.model.Car;
+import com.example.simplespring.service.CarService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
-
-import static com.nwboxed.simplespring.mapper.CarMapper.createCarResponse;
 
 @AllArgsConstructor
 @RestController
@@ -35,7 +33,7 @@ public class CarController {
     public ResponseEntity<CarResponseDto> getCars(){
         return ResponseEntity
                 .status(HttpStatus.OK)
-                .body(createCarResponse(carService.findAll()));
+                .body(CarMapper.createCarResponse(carService.findAll()));
     }
 
     @PostMapping(value = "/cars", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
