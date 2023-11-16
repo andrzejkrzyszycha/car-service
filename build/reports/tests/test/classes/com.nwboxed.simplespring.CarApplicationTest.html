@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - CarApplicationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>CarApplicationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.nwboxed.simplespring.html">com.nwboxed.simplespring</a> &gt; CarApplicationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.060s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">getAllCars_success()</td>
+<td class="success">0.060s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>18:53:10.458 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.nwboxed.simplespring.CarApplicationTest]: CarApplicationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:53:10.498 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.nwboxed.simplespring.CarApplication for test class com.nwboxed.simplespring.CarApplicationTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.2)
+
+2023-11-16T18:53:10.651+01:00  INFO 65216 --- [    Test worker] c.n.simplespring.CarApplicationTest      : Starting CarApplicationTest using Java 19.0.2 with PID 65216 (started by endriu in /Users/endriu/remote-pair-programming-test)
+2023-11-16T18:53:10.651+01:00  INFO 65216 --- [    Test worker] c.n.simplespring.CarApplicationTest      : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-11-16T18:53:10.926+01:00  INFO 65216 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-16T18:53:10.945+01:00  INFO 65216 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 1 JPA repository interfaces.
+2023-11-16T18:53:11.551+01:00  INFO 65216 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-16T18:53:11.639+01:00  INFO 65216 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:db user=SA
+2023-11-16T18:53:11.640+01:00  INFO 65216 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-16T18:53:11.665+01:00  INFO 65216 --- [    Test worker] liquibase.database                       : Set default schema name to PUBLIC
+2023-11-16T18:53:11.847+01:00  INFO 65216 --- [    Test worker] liquibase.executor                       : Changelog query completed.
+2023-11-16T18:53:11.848+01:00  INFO 65216 --- [    Test worker] liquibase.executor                       : Changelog query completed.
+2023-11-16T18:53:11.850+01:00  INFO 65216 --- [    Test worker] liquibase.executor                       : Changelog query completed.
+2023-11-16T18:53:11.851+01:00  INFO 65216 --- [    Test worker] liquibase.executor                       : Changelog query completed.
+2023-11-16T18:53:11.853+01:00  INFO 65216 --- [    Test worker] liquibase.executor                       : Changelog query completed.
+2023-11-16T18:53:11.853+01:00  INFO 65216 --- [    Test worker] liquibase.lockservice                    : Successfully acquired change log lock
+2023-11-16T18:53:11.858+01:00  INFO 65216 --- [    Test worker] liquibase.changelog                      : Creating database history table with name: PUBLIC.DATABASECHANGELOG
+2023-11-16T18:53:11.860+01:00  INFO 65216 --- [    Test worker] liquibase.executor                       : Changelog query completed.
+2023-11-16T18:53:11.861+01:00  INFO 65216 --- [    Test worker] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2023-11-16T18:53:11.862+01:00  INFO 65216 --- [    Test worker] liquibase.executor                       : Changelog query completed.
+2023-11-16T18:53:11.862+01:00  INFO 65216 --- [    Test worker] liquibase.executor                       : Changelog query completed.
+Running Changeset: db/changelog/liquibase-changeLog.xml::add-car-table::user
+2023-11-16T18:53:11.875+01:00  INFO 65216 --- [    Test worker] liquibase.changelog                      : Table car created
+2023-11-16T18:53:11.875+01:00  INFO 65216 --- [    Test worker] liquibase.changelog                      : ChangeSet db/changelog/liquibase-changeLog.xml::add-car-table::user ran successfully in 2ms
+2023-11-16T18:53:11.877+01:00  INFO 65216 --- [    Test worker] liquibase.executor                       : Changelog query completed.
+2023-11-16T18:53:11.877+01:00  INFO 65216 --- [    Test worker] liquibase.executor                       : Changelog query completed.
+2023-11-16T18:53:11.878+01:00  INFO 65216 --- [    Test worker] liquibase                                : Update command completed successfully.
+2023-11-16T18:53:11.878+01:00  INFO 65216 --- [    Test worker] liquibase.executor                       : Changelog query completed.
+2023-11-16T18:53:11.879+01:00  INFO 65216 --- [    Test worker] liquibase.lockservice                    : Successfully released change log lock
+2023-11-16T18:53:11.917+01:00  INFO 65216 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-16T18:53:11.940+01:00  INFO 65216 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.6.Final
+2023-11-16T18:53:11.941+01:00  INFO 65216 --- [    Test worker] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-11-16T18:53:11.985+01:00  INFO 65216 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-11-16T18:53:11.990+01:00  INFO 65216 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-16T18:53:12.064+01:00  INFO 65216 --- [    Test worker] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-11-16T18:53:12.245+01:00  INFO 65216 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-16T18:53:12.257+01:00  INFO 65216 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-16T18:53:12.317+01:00  WARN 65216 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-16T18:53:12.527+01:00  INFO 65216 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-11-16T18:53:12.528+01:00  INFO 65216 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-11-16T18:53:12.529+01:00  INFO 65216 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2023-11-16T18:53:12.543+01:00  INFO 65216 --- [    Test worker] c.n.simplespring.CarApplicationTest      : Started CarApplicationTest in 1.993 seconds (process running for 2.402)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.2.1</a> at 16 lis 2023, 18:53:12</p>
+</div>
+</div>
+</body>
+</html>

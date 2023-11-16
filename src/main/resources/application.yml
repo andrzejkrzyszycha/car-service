@@ -1,0 +1,17 @@
+logging.level: 
+  root: INFO
+
+spring.jpa.hibernate.ddl-auto: validate
+
+spring:
+  application.name: simple-spring
+  liquibase.change-log: classpath:db/changelog/liquibase-changeLog.xml
+  datasource:
+    url: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
+    username: sa
+    password: sa
+    driver-class-name: org.h2.Driver
+
+endpoints.enabled: false
+
+server.port: 8080
