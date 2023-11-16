@@ -15,17 +15,20 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
 @AutoConfigureMockMvc
-public class CarApplicationTest {
+public class CarControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
@@ -48,6 +51,37 @@ public class CarApplicationTest {
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().is(HttpStatus.OK.value()))
                 .andExpect(jsonPath("$.cars").isArray());
+
+    }
+
+    @Test
+    public void getCar_success() throws Exception {
+        Long carId = 1L;
+
+        Optional<Car> car = Optional.of(new Car(carId, "bmw", "red"));
+
+        when(carService.getCar(any())).thenReturn(car);
+
+        mockMvc.perform(
+                        get("/api/v1/cars/" + carId)
+                                .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().is(HttpStatus.OK.value()))
+                .andExpect(jsonPath("$.id").exists())
+                .andExpect(jsonPath("$.type").exists())
+                .andExpect(jsonPath("$.colour").exists());
+
+    }
+
+    @Test
+    public void getCar_notFound() throws Exception {
+        long carId = 1L;
+
+        mockMvc.perform(
+                        get("/api/v1/cars/" + carId)
+                                .contentType(MediaType.APPLICATION_JSON))
+                .andDo(print())
+                .andExpect(status().is(HttpStatus.NOT_FOUND.value()))
+                .andExpect(status().reason("Car not found."));
 
     }
 }

@@ -8,6 +8,6 @@ import java.util.List;
 
 @Builder
 @Data
-public class CarResponse {
+public class CarResponseDto {
     private List<Car> cars;
 }
